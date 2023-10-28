@@ -1,6 +1,13 @@
 # Czech Christmas Sweet
 
-This website was created for the purpose of presenting the Czech Christmas Sweet in CDMX. The website was created with react + vite.
+This website was created for the purpose of presenting the Czech Christmas Sweet in CDMX.
+
+Steps:
+1) The website was created with react + vite in Visual Studio Code
+2) The Docker image was build from a Dockerfile and then was run in order to create an instance of a container.
+3) The website was deployed on fly.io
+
+Here is a link to the web-page: https://galletaschecas.fly.dev/
 
 The desktop view can be seen here:
 
