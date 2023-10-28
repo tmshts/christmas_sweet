@@ -1,0 +1,27 @@
+import styled from 'styled-components';
+
+import Burger from './Burger'
+
+
+const Nav = styled.nav`
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    background-color: #00A693;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: white;
+`
+
+const Navbar = ( {introRef, productRef, galletasRef } ) => {
+    return (
+        <Nav>
+
+        <Burger introRef={introRef} productRef={productRef} galletasRef={galletasRef}/>
+
+        </Nav>
+    )
+}
+
+export default Navbar
