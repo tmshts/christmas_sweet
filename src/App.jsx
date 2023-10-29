@@ -90,7 +90,7 @@ const App = () => {
       },
       {
         id: 2, 
-        name: 'azúcar molida'
+        name: 'azúcar glas'
       },
       {
         id: 3,
@@ -118,10 +118,6 @@ const App = () => {
       {
         id: 4,
         name: 'azúcar glas'
-      },
-      {
-        id: 5,
-        name: 'azúcar de vainilla'
       }
     ],
       foto: slehackove_foto
@@ -131,41 +127,37 @@ const App = () => {
       name: 'Vosí hnízda',
       ingredients: [
         {
-        id: 1,
-        name: 'bizcochos'
-      },
-      {
-        id: 2, 
-        name: 'mantequilla'
-      },
-      {
-        id: 3,
-        name: 'azúcar glas'
-      },
-      {
-        id: 4,
-        name: 'cacao'
-      },
-      {
-        id: 5,
-        name: 'avellanas'
-      },
-      {
-        id: 6, 
-        name: 'ron'
-      },
-      {
-        id: 7,
-        name: 'mantequilla'
-      },
-      {
-        id: 8,
-        name: 'azúcar glas'
-      },
-      {
-        id: 9,
-        name: 'yemas de huevo'
-      }
+          id: 1,
+          name: 'bizcochos'
+        },
+        {
+          id: 2, 
+          name: 'mantequilla'
+        },
+        {
+          id: 3,
+          name: 'azúcar glas'
+        },
+        {
+          id: 4,
+          name: 'cacao'
+        },
+        {
+          id: 5, 
+          name: 'ron'
+        },
+        {
+          id: 6,
+          name: 'mantequilla'
+        },
+        {
+          id: 7,
+          name: 'azúcar glas'
+        },
+        {
+          id: 8,
+          name: 'yemas de huevo'
+        }
     ],
       foto: vosi_foto
     },
