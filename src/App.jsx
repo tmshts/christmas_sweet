@@ -40,7 +40,15 @@ const App = () => {
         },
         {
           id: 5,
-          name: 'nueces molidas'
+          name: 'almendras molidas'
+        },
+        {
+          id: 6,
+          name: 'yemas de huevo'
+        },
+        {
+          id: 7,
+          name: 'azúcar de vainilla'
         }
       ],
       foto: rohlicky_foto
@@ -63,18 +71,14 @@ const App = () => {
         },
         {
           id: 4, 
-          name: 'azúcar de vainilla'
-        },
-        {
-          id: 5, 
           name: 'yemas de huevo'
         },
         {
-          id: 6, 
+          id: 5, 
           name: 'cáscara de un limón'
         },
         {
-          id: 7,
+          id: 6,
           name: 'mermelada'
         }
       ],
@@ -84,9 +88,9 @@ const App = () => {
       id: 3,
       name: 'Kokosky',
       ingredients: [
-        {
+      {
         id: 1,
-        name: 'claras de huevo'
+        name: 'coco rallado'
       },
       {
         id: 2, 
@@ -94,7 +98,7 @@ const App = () => {
       },
       {
         id: 3,
-        name: 'coco rallado'
+        name: 'huevos'
       }
     ],
       foto: kokosky_foto
@@ -113,11 +117,15 @@ const App = () => {
       },
       {
         id: 3,
-        name: 'nata montada'
+        name: 'crema para batir'
       },
       {
         id: 4,
         name: 'azúcar glas'
+      },
+      {
+        id: 5,
+        name: 'azúcar de vainilla'
       }
     ],
       foto: slehackove_foto
@@ -127,37 +135,33 @@ const App = () => {
       name: 'Vosí hnízda',
       ingredients: [
         {
-          id: 1,
-          name: 'bizcochos'
-        },
-        {
-          id: 2, 
-          name: 'mantequilla'
-        },
-        {
-          id: 3,
-          name: 'azúcar glas'
-        },
-        {
-          id: 4,
-          name: 'cacao'
-        },
-        {
-          id: 5, 
-          name: 'ron'
-        },
-        {
-          id: 6,
-          name: 'mantequilla'
-        },
-        {
-          id: 7,
-          name: 'azúcar glas'
-        },
-        {
-          id: 8,
-          name: 'yemas de huevo'
-        }
+        id: 1,
+        name: 'bizcochos'
+      },
+      {
+        id: 2, 
+        name: 'mantequilla'
+      },
+      {
+        id: 3,
+        name: 'azúcar glas'
+      },
+      {
+        id: 4,
+        name: 'cacao'
+      },
+      {
+        id: 5,
+        name: 'leche'
+      },
+      {
+        id: 6, 
+        name: 'ron'
+      },
+      {
+        id: 7,
+        name: 'yemas de huevo'
+      }
     ],
       foto: vosi_foto
     },
@@ -195,7 +199,7 @@ const App = () => {
       },
       {
         id: 8,
-        name: 'yemas de huevo'
+        name: 'claras de huevo'
       }
     ],
       foto: pernicky_foto
