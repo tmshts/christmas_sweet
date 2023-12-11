@@ -2,10 +2,15 @@ body {
   height: 100%;
   background-image:
   url("./assets/vanoce_3.jpeg");
-  opacity: 0.85;
+  opacity: 0.95;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  font-family: didot;
+}
+
+.font_titulos {
+  font-family: cursive;
 }
 
 h2 {
@@ -21,6 +26,16 @@ h2 {
   background-color: #00A693;
 }
 
+.galletas_intro {
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: grey solid 1px;
+  background-color: #00A693;
+  font-weight: bold;
+}
+
 .div_product {
   display: flex;
   align-items: center;
@@ -30,8 +45,12 @@ h2 {
 
 .paquete {
   border-radius: 8px;
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 50%;
+}
+
+.galleta_header {
+  font-size: x-large;
 }
 
 .div_galletas {

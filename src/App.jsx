@@ -40,7 +40,7 @@ const App = () => {
         },
         {
           id: 5,
-          name: 'almendras molidas'
+          name: 'almendras/nueces molidas'
         },
         {
           id: 6,
@@ -79,7 +79,7 @@ const App = () => {
         },
         {
           id: 6,
-          name: 'mermelada'
+          name: 'mermelada de grosella'
         }
       ],
       foto: linecke_foto
