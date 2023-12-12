@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Burger from './Burger'
 import foto from '../../assets/arbol.png'
 
+// credit to dieudonneAwa (GitHub Account) with the Navbar
 
 
 const Nav = styled.nav`

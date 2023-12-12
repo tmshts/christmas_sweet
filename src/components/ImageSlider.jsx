@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react"
 
+// credit to monsterlessonsacademy (GitHub Account) with the ImageSlider
+
 const ImageSlider = ( {galletas, parentWidth } ) => {
 
     const timeRef = useRef(null);
@@ -14,7 +16,7 @@ const ImageSlider = ( {galletas, parentWidth } ) => {
     const slidesContainerStyles = {
         display: 'flex',
         height: '100%',
-        transition: 'transform ease-out 0.5s',
+        transition: 'transform ease-out 0.6s',
     }
 
     const getSlidesContainerStylesWithWidth = () => ({
@@ -95,7 +97,7 @@ const ImageSlider = ( {galletas, parentWidth } ) => {
         }
         timeRef.current = setTimeout(() => {
             goToNext();
-        }, 2000);
+        }, 4000);
 
         return () => clearTimeout(timeRef.current)
     }, [goToNext]);
