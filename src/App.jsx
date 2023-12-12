@@ -40,7 +40,7 @@ const App = () => {
         },
         {
           id: 5,
-          name: 'almendras/nueces molidas'
+          name: 'almendras molidas'
         },
         {
           id: 6,

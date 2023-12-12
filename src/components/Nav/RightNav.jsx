@@ -7,10 +7,9 @@ const Ul = styled.ul`
     flex-flow: row nowrap;
 
     li {
-        padding-right: 20px;
-        padding-bottom: 20px;
-        z-index: 9;
+        color: white;
         cursor: pointer;
+        padding: 0px 30px;
     }
 
     @media (max-width: 768px) {
@@ -30,6 +29,7 @@ const Ul = styled.ul`
         li {
             color: white;
             cursor: pointer;
+            padding: 20px 20px 0 0;
         }
     }
 `
@@ -38,7 +38,6 @@ const RightNav = ( {open, introRef, productRef, galletasRef } ) => {
 
 
     return (
-        <>
             <Ul open={open}>
                 <li onClick={() => introRef.current.scrollIntoView({
                     behavior: 'smooth'
@@ -56,7 +55,6 @@ const RightNav = ( {open, introRef, productRef, galletasRef } ) => {
                     <b>Ingredientes</b>
                 </li>
             </Ul>
-        </>
     )
 }
 
