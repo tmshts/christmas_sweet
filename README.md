@@ -9,6 +9,18 @@ Steps:
 
 Here is a link to the web-page: https://galletaschecas.fly.dev/
 
+## How to run this React application
+
+```bash
+# Install dependencies
+$ npm install
+```
+
+```bash
+# Start app
+$ npm run dev
+```
+
 The desktop view can be seen here:
 
 <img width="1433" alt="desktop view" src="https://github.com/tmshts/christmas_sweet/assets/74012536/4e9e02b8-48ff-4773-b4fb-c201476c54ab">
