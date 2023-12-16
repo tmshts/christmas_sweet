@@ -23,8 +23,8 @@ const App = () => {
   console.log('Feliz Navidad from component')
 
   const galletas_strudel = [
-    linecke_foto,
     rohlicky_foto,
+    linecke_foto,
     kokosky_foto,
     slehackove_foto,
     vosi_foto,
