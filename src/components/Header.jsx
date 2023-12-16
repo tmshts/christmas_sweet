@@ -1,3 +1,3 @@
-const Header = ({ galleta }) => <b className="galleta_header">{galleta.name}</b>
+const Header = ({ dulce_header }) => <b className="galleta_header">{dulce_header}</b>
 
 export default Header

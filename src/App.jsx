@@ -12,10 +12,25 @@ import ImageSlider from './components/ImageSlider'
 import Navbar from './components/Nav/Navbar'
 import ScrollToTop from './components/ScrollToTop'
 
+import Product_Description from './components/Product_description'
+import Strudel from './components/Strudel'
+import paquete_foto from './assets/paquete.jpeg'
+import strudel_foto from './assets/strudel.jpeg'
 import { useRef } from 'react'
+
 
 const App = () => {
   console.log('Feliz Navidad from component')
+
+  const galletas_strudel = [
+    linecke_foto,
+    rohlicky_foto,
+    kokosky_foto,
+    slehackove_foto,
+    vosi_foto,
+    pernicky_foto,
+    strudel_foto
+  ]
 
   const galletas = [
     {
@@ -206,6 +221,54 @@ const App = () => {
     }
   ]
 
+  const strudel = {
+    id: 1,
+    name: 'Strudel de Manzana',
+    ingredients: [
+      {
+      id: 1,
+      name: 'pasta hojaldre'
+      },
+      {
+        id: 2, 
+        name: 'manzanas sin cascaras'
+      },
+      {
+        id: 3,
+        name: 'canela'
+      },
+      {
+        id: 4,
+        name: 'azúcar moscabado'
+      },
+      {
+        id: 5,
+        name: 'coco'
+      },
+      {
+        id: 6, 
+        name: 'núez'
+      },
+      {
+        id: 7,
+        name: 'huevo'
+      },
+      {
+        id: 8,
+        name: 'uva pasa'
+      },
+      {
+        id: 9,
+        name: 'yema de huevo'
+      },
+      {
+        id: 10,
+        name: 'azúcar glas'
+      },
+  ],
+  foto: strudel_foto
+  }
+
  const containerStyle = {
     width: '100%', // 70%
     height: '480px', // 480px
@@ -217,18 +280,23 @@ const App = () => {
 
   // props drilling - bad approach
   const introRef = useRef(null)
-  const productRef = useRef(null)
+  const productGalletasRef = useRef(null)
+  const productStrudelRef = useRef(null)
   const galletasRef = useRef(null)
 
   return (
     <>
-    <Navbar introRef={introRef} productRef={productRef} galletasRef={galletasRef}/>
+    <Navbar introRef={introRef} productGalletasRef={productGalletasRef} productStrudelRef={productStrudelRef} galletasRef={galletasRef}/>
     <div style={containerStyle}>
-      <ImageSlider galletas={galletas} parentWidth={1500} />  
+      <ImageSlider galletas_strudel={galletas_strudel} parentWidth={1500} />  
     </div>
       <Intro  ref={introRef}/>
-      <Product ref={productRef}/>
+      <Product_Description ref={productGalletasRef} description="El paquete navideño de las galletas checas cuesta 500 MXN / aprox. 300 g:"/>
+      <Product product={paquete_foto}/>
+      <Product_Description ref={productStrudelRef} description="Strudel de manzana cuesta 450 MXN / aprox. 500 g:"/>
+      <Product product={strudel_foto} />
       <Galletas ref={galletasRef} galletas={galletas} />
+      <Strudel strudel={strudel} />
       <ScrollToTop />
       <Footer />
     </>

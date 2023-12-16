@@ -34,7 +34,7 @@ const Ul = styled.ul`
     }
 `
 
-const RightNav = ( {open, introRef, productRef, galletasRef } ) => {
+const RightNav = ({ open, introRef, productGalletasRef, productStrudelRef, galletasRef }) => {
 
 
     return (
@@ -44,11 +44,19 @@ const RightNav = ( {open, introRef, productRef, galletasRef } ) => {
                 })}>
                     <b>Venta</b>
                 </li>
-                <li onClick={() => productRef.current.scrollIntoView({
+
+                <li onClick={() => productGalletasRef.current.scrollIntoView({
                     behavior: 'smooth',
                 })}>
                     <b>Galletas Checas</b>
                 </li>
+
+                <li onClick={() => productStrudelRef.current.scrollIntoView({
+                    behavior: 'smooth',
+                })}>
+                    <b>Strudel de Manzana</b>
+                </li>
+
                 <li onClick={() => galletasRef.current.scrollIntoView({
                     behavior: 'smooth'
                 })}>

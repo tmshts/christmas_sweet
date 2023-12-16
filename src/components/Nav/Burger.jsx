@@ -42,7 +42,7 @@ const StyledBurger = styled.div`
     }
 `;
 
-const Burger = ( {introRef, productRef, galletasRef} ) => {
+const Burger = ({ introRef, productGalletasRef, productStrudelRef, galletasRef }) => {
 
     const [open, setOpen] = useState(false)
 
@@ -53,7 +53,7 @@ const Burger = ( {introRef, productRef, galletasRef} ) => {
                 <div />
                 <div />
             </StyledBurger>
-            <RightNav open={open} introRef={introRef} productRef={productRef} galletasRef={galletasRef}/>
+            <RightNav open={open} introRef={introRef} productGalletasRef={productGalletasRef} productStrudelRef={productStrudelRef} galletasRef={galletasRef}/>
         </>
     )
 }

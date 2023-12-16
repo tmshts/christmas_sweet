@@ -1,8 +1,8 @@
-const Ingredients = ({ ingredients }) => {
+const Ingredients = ({ dulce_ingredients }) => {
     return (
       <>
         <ul>
-          {ingredients.map((ingredient) => (
+          {dulce_ingredients.map((ingredient) => (
             <li key={ingredient.id}>{ingredient.name}</li>
           ))}
         </ul>

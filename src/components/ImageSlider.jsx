@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react"
 
 // credit to monsterlessonsacademy (GitHub Account) with the ImageSlider
 
-const ImageSlider = ( {galletas, parentWidth } ) => {
+const ImageSlider = ({ galletas_strudel, parentWidth }) => {
 
     const timeRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,7 +21,7 @@ const ImageSlider = ( {galletas, parentWidth } ) => {
 
     const getSlidesContainerStylesWithWidth = () => ({
         ...slidesContainerStyles,
-        width: parentWidth * galletas.length,
+        width: parentWidth * galletas_strudel.length,
         transform: `translateX(${-(currentIndex * parentWidth)}px)`
     })
 
@@ -31,7 +31,7 @@ const ImageSlider = ( {galletas, parentWidth } ) => {
         borderRadius: '10px',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        backgroundImage: `url(${galletas[slideIndex].foto})`,
+        backgroundImage: `url(${galletas_strudel[slideIndex]})`,
     });
 
     const leftArrowStyles = {
@@ -58,15 +58,15 @@ const ImageSlider = ( {galletas, parentWidth } ) => {
 
     const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0;
-        const newIndex = isFirstSlide ? galletas.length - 1 : currentIndex - 1;
+        const newIndex = isFirstSlide ? galletas_strudel.length - 1 : currentIndex - 1;
         setCurrentIndex(newIndex);
     };
 
     const goToNext = useCallback(() => {
-        const isLastSlide = currentIndex === galletas.length - 1;
+        const isLastSlide = currentIndex === galletas_strudel.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
-    }, [currentIndex, galletas]);
+    }, [currentIndex, galletas_strudel]);
 
     const dotsContainerStyles = {
         display: 'flex',
@@ -110,13 +110,13 @@ const ImageSlider = ( {galletas, parentWidth } ) => {
             <div style={slidesContainerOverflowStyles}>
 
             <div style={getSlidesContainerStylesWithWidth()}>
-                {galletas.map((_, slideIndex) => (
+                {galletas_strudel.map((_, slideIndex) => (
                     <div key={slideIndex} style={getSlidesStylesWithBackground(slideIndex)}> </div>
                 ))}
             </div>
             
             <div style={dotsContainerStyles}>
-                {galletas.map((slide, slideIndex) => (
+                {galletas_strudel.map((slide, slideIndex) => (
                    <div key={slideIndex} style={dotStyles} onClick={() => goToSlide(slideIndex)}>⬤</div> 
                 )
                 )}

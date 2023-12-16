@@ -22,14 +22,14 @@ const Nav = styled.nav`
     
 `
 
-const Navbar = ( {introRef, productRef, galletasRef } ) => {
+const Navbar = ({ introRef, productGalletasRef, productStrudelRef, galletasRef }) => {
     return (
         <Nav>
             <div className='logo'>
                 <img src={foto} className="foto_logo" alt="foto" />
             </div>
 
-        <Burger introRef={introRef} productRef={productRef} galletasRef={galletasRef}/>
+        <Burger introRef={introRef} productGalletasRef={productGalletasRef} productStrudelRef={productStrudelRef} galletasRef={galletasRef}/>
 
         </Nav>
     )

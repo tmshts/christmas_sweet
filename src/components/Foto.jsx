@@ -1,7 +1,7 @@
-const Foto = ({ foto }) => {
+const Foto = ({ dulce_foto }) => {
     return (
       <>
-        <img src={foto} className="foto_cukrovi" alt="foto" />
+        <img src={dulce_foto} className="foto_cukrovi" alt="foto" />
       </>
     )
   }
