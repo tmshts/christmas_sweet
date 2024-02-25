@@ -23,8 +23,8 @@ $ npm run dev
 
 The desktop view can be seen here:
 
-<img width="1433" alt="desktop view" src="https://github.com/tmshts/christmas_sweet/assets/74012536/07f4b857-64e0-4551-9820-3f86046febb0">
+<img width="1433" alt="desktop view" src="https://github.com/tmshts/christmas_sweet/assets/74012536/240fd6f6-7f0f-459d-a2db-3edcd7be9c3e">
 
 The mobile view:
 
-<img width="492" alt="mobile view" src="https://github.com/tmshts/christmas_sweet/assets/74012536/7411f472-c160-414b-9cbf-3965712c4dad">
+<img width="492" alt="mobile view" src="https://github.com/tmshts/christmas_sweet/assets/74012536/f5338120-2427-4aa4-88d6-2209929d1963">
