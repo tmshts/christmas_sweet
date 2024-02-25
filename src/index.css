@@ -1,0 +1,117 @@
+body {
+  height: 100%;
+  background-image:
+  url("./assets/vanoce_3.jpeg");
+  opacity: 0.95;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: didot;
+}
+
+.font_titulos {
+  font-family: cursive;
+}
+
+h2 {
+  text-align: center;
+}
+
+.div_intro {
+  padding-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: grey solid 1px;
+  background-color: #00A693;
+}
+
+.galletas_intro {
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: grey solid 1px;
+  background-color: #00A693;
+  font-weight: bold;
+}
+
+.div_product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.paquete {
+  border-radius: 8px;
+  width: 50%;
+  height: 50%;
+}
+
+.galleta_header {
+  font-size: x-large;
+}
+
+.div_galletas {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: grey solid 1px;
+  background-color: #E5E4E2;
+}
+
+.div_cukrovi {
+  align-items: center;
+  justify-content: center;
+}
+
+.foto_cukrovi {
+  border-radius: 8px;
+  width: 70%;
+  max-height: 60%;
+}
+
+.foto_logo {
+  max-width: 100%;
+  max-height: 100%;  
+}
+
+.div_galletas div {
+  flex: 1;
+  /* background-color: blueviolet; */
+} 
+
+.div_galletas div:first-child {
+  /* border: black solid 4px; */
+  margin-left: 10px;
+}
+
+.div_galletas div:last-child {
+  /* border: black solid 4px; */
+  margin-right: 10px;
+  margin-left: -10%;
+}
+
+footer {
+  border-radius: 8px;
+  color: black;
+  padding-left: 10px;
+  height: 50px;
+  display: flex;
+  background-color: goldenrod;
+}
+
+.top_btn_position {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 4px solid #333;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+}
