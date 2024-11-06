@@ -13,6 +13,7 @@ const Nav = styled.nav`
     justify-content: space-between;
     background-color: #C30F16;
     border-radius: 10px;
+    border: white solid 1px;
     margin-bottom: 10px;
     color: white;
 
