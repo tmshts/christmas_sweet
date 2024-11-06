@@ -40,7 +40,7 @@ const ImageSlider = ({ galletas_strudel, parentWidth }) => {
         transform: 'translate(0, -50%)',
         left: '32px',
         fontSize: '45px',
-        color: '#00A693',
+        color: '#C30F16',
         zIndex: 1,
         cursor: 'pointer'
     };
@@ -51,7 +51,7 @@ const ImageSlider = ({ galletas_strudel, parentWidth }) => {
         transform: 'translate(0, -50%)',
         right: '32px',
         fontSize: '45px',
-        color: '#00A693',
+        color: '#C30F16',
         zIndex: 1,
         cursor: 'pointer'
     };
@@ -78,7 +78,7 @@ const ImageSlider = ({ galletas_strudel, parentWidth }) => {
         margin: '0 3px',
         cursor: 'pointer',
         fontSize: '15px',
-        color: '#00A693',
+        color: '#C30F16',
         transform: 'translate(0, -100%)',
     };
 

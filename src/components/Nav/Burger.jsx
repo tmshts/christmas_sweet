@@ -4,15 +4,15 @@ import RightNav from './RightNav'
 
 
 const StyledBurger = styled.div`
-    width: 2rem;
+    width: 2.5rem;
     height: 2rem;
     position: fixed;
-    top: 20px;
+    top: 35px;
     right: 20px;
     z-index: 20;
     display: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: 810px) {
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;
@@ -20,8 +20,8 @@ const StyledBurger = styled.div`
 
     div {
         width: 2rem;
-        height: 0.3rem;
-        background-color: ${({ open }) => open ? 'white' : 'black'};
+        height: 0.4rem;
+        background-color: ${({ open }) => open = 'white'};
         border-radius: 10px;
         transform-origin: 1px;
         transition: all 0.3s linear;
