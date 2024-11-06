@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import Burger from './Burger'
-import foto from '../../assets/arbol.png'
 import santa from '../../assets/santa.webp'
 
 // credit to dieudonneAwa (GitHub Account) with the Navbar

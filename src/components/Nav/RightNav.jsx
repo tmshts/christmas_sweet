@@ -9,14 +9,15 @@ const Ul = styled.ul`
     li {
         color: white;
         cursor: pointer;
+        font-size: 18px;
         padding: 15px 30px;
     }
 
-    @media (max-width: 810px) {
+    @media (max-width: 860px) {
         flex-flow: column nowrap;
         background-color: #C30F16;
         position: fixed;
-        margin-top: 20px;
+        margin-top: 25px;
         transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
         top: 0;
         right: 0;
