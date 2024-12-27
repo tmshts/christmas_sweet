@@ -6,7 +6,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: didot;
+  background-position: center;
 }
 
 .font_titulos {
@@ -26,6 +26,8 @@ h2 {
   border: white solid 1px;
   background-color: #C30F16;
   color: white;
+  line-height: 1.8;
+  font-size: large;
 }
 
 .galletas_intro {
@@ -36,7 +38,7 @@ h2 {
   border: white solid 1px;
   background-color: #C30F16;
   color: white;
-  font-weight: bold;
+  font-size: large;
 }
 
 .div_product {
